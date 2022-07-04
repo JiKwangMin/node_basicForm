@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 //DB연결
 const mongoose = require('mongoose')
 //'깃주소' 부분 mongoDB URL 입력해야함. 깃 업로드 전 꼭 지우고 업로드.
-mongoose.connect('깃주소')
+mongoose.connect('DB주소')
     .then(() => console.log('MongoDB Connectied!!...'))
     .catch(err => console.log(err))
 //.then  -> 문장안에 성공하면 ~
